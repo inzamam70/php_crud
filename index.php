@@ -42,6 +42,7 @@ include('dbcon.php');
                                     <th>Phone No</th>
                                     <th>Course</th>
                                     <th>Edit</th>
+                                    <th>Delete</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -62,6 +63,11 @@ include('dbcon.php');
                                             <td><?= $row->course?></td>
                                             <td>
                                                 <a href="student-edit.php?id=<?=$row->id?>" class="btn btn-primary">Edit</a>
+                                            </td>
+                                            <td>
+                                                <form action="code.php" method="POST">
+                                                    <button class="btn btn-danger" type="submit" name="delete_student" value="<?=$row->id?>">Delete</button>
+                                                </form>
                                             </td>
                                         </tr>
                                     <?php

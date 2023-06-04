@@ -61,10 +61,10 @@ include('dbcon.php');
                             </div>
                             <div class="mb-3">
                                 <label>Course</label>
-                                <input type="text" name="course"  value="<?=$result->fcourse?>" class="form-control" />
+                                <input type="text" name="course"  value="<?=$result->course?>" class="form-control" />
                             </div>
                             <div class="mb-3">
-                                <button type="submit" name="save_student_btn" class="btn btn-primary">Save Student</button>
+                                <button type="submit" name="update_student_btn" class="btn btn-primary">Update Student</button>
                             </div>
                         </form>
                     </div>
